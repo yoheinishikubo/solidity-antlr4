@@ -43,7 +43,7 @@ natSpec
   | NatSpecMultiLine ;
 
 contractDefinition
-  : natSpec? ( 'contract' | 'interface' | 'library' ) identifier
+  : natSpec? ( 'contract' | 'interface' | 'library' | 'abstract contract' ) identifier
     ( 'is' inheritanceSpecifier (',' inheritanceSpecifier )* )?
     '{' contractPart* '}' ;
 
